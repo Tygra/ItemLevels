@@ -63,7 +63,7 @@ namespace ItemLevels
             {
                 case "mysql":
                     string[] host = TShock.Config.MySqlHost.Split(':');
-                    Database = new MysqlConnection()
+                    Database = new MySqlConnection()
                     {
                         ConnectionString = string.Format("Server={0}; Port={1}; Database={2}; Uid={3}; Pwd={4};",
                         host[0],
